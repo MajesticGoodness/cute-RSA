@@ -118,8 +118,8 @@ def prime_test (prime, security) :
                 # we know that 1 should only appear after a 1 or a prime - 1 appears.
                 # but, if we're in this loop, then it means that the prior number was neither a 1, nor a prime - 1.
                 # so, the test fails and the number must be composite.
-                #if z == 1 : 
-                    #return False
+                if z == 1 : 
+                    return False
                 j = j + 1
             
             # in this algorithm we don't even need to check the end of the sequence, since we know
