@@ -159,14 +159,10 @@ def gib_prime (bitLength, security_param) :
     return cutePair
 
 def gib_modulo_n (cutePair) :
-    #p = cutePair[0]
-    #q = cutePair[1]
     p, q = cutePair
     return p * q
 
 def gib_phi (cutePair) :
-    #p = cutePair[0]
-    #q = cutePair[1]
     p, q = cutePair
     return (p - 1) * (q - 1)
 
@@ -223,6 +219,3 @@ def main() :
     print("Decrypted result: ", decrypted)
 
 main()
-
-#prime_test(211, 5)
-#sq_and_mul(76, 57, 211)
